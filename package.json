@@ -1,0 +1,44 @@
+{
+    "name": "@node-blue/cli",
+    "version": "0.1.0",
+    "description": "CLI for Node-BLUE",
+    "main": "dist/index.js",
+    "bin": {
+        "node-blue": "dist/index.js"
+    },
+    "files": [
+        "dist"
+    ],
+    "repository": "git+https://github.com/node-blue/cli.git",
+    "author": "Niels Bik <hey@nielsbik.nl>",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "commander": "^5.1.0",
+        "figlet": "^1.4.0",
+        "node-blue": "^0.5.1"
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^12.0.0",
+        "@rollup/plugin-json": "^4.0.3",
+        "@rollup/plugin-node-resolve": "^8.0.0",
+        "@rollup/plugin-typescript": "^4.1.2",
+        "@types/figlet": "^1.2.0",
+        "@types/node": "^14.0.6",
+        "nodemon": "^2.0.4",
+        "np": "^6.2.3",
+        "rollup": "^2.11.2",
+        "tslib": "^2.0.0",
+        "typescript": "^3.9.3"
+    },
+    "scripts": {
+        "build": "rollup -c",
+        "build:watch": "rollup -cw",
+        "dev": "nodemon --exec 'node-blue start .test'",
+        "release": "np",
+        "start": "npm run build && node-blue start .test",
+        "test": "echo \"No test specified\""
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}
