@@ -3,6 +3,7 @@ import figlet from "figlet";
 // @ts-ignore ref: https://github.com/patorjk/figlet.js/issues/52
 import standard from "figlet/importable-fonts/Standard";
 
+// @ts-ignore
 import { init } from "node-blue";
 
 import { description, version } from "../package.json";
