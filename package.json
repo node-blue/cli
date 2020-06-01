@@ -15,7 +15,7 @@
     "dependencies": {
         "commander": "^5.1.0",
         "figlet": "^1.4.0",
-        "node-blue": "^0.6.0"
+        "node-blue": "^0.7.0"
     },
     "devDependencies": {
         "@rollup/plugin-commonjs": "^12.0.0",
