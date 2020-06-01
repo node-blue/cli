@@ -25,6 +25,7 @@ program
     .option("-p, --port <port>", "your Home Assistant instance's port", "8123")
     .option("-s, --secure", "use a secure connection")
     .option("-t, --token <token>", "a long-lived access token")
+    .option("-S, --socket", "full Websocket API location")
     .action(init);
 
 program.parse(process.argv);
